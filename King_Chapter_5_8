@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int main() {
+	int msmidnight = 0; 
+	int hour = 0, minutes = 0; 
+	printf("Enter a 24 hour time: "); 
+	scanf_s("%d:%d", &hour, &minutes); 
+	msmidnight = hour * 60 + minutes; 
+	if (msmidnight < 480) {
+		printf("The closest departure time is 8:00am, arriving at 10:16am."); 
+	}
+	else if (msmidnight < 531) {
+		printf("The closest departure time is 8:00am, arriving at 10:16am.");
+	}
+	else if (msmidnight < 583) {
+		printf("closest departure time is 9:43am, arriving at 11:52am.");
+	}
+	else if (msmidnight < 631) {
+		printf("closest departure time is 9:43am, arriving at 11:52am.");
+	}
+	else if (msmidnight < 767) {
+		printf("closest departure time is 12:47pm, arriving at 3:00pm.");
+	}
+	else if (msmidnight < 803) {
+		printf("closest departure time is 12:47pm, arriving at 3:00pm.");
+	}
+	else if (msmidnight < 840) {
+		printf("closest departure time is 2:00pm, arriving at 4:08pm.");
+	}
+	else if (msmidnight < 892) {
+		printf("closest departure time is 2:00pm, arriving at 4:08pm.");
+	}
+	else if (msmidnight < 945) {
+		printf("closest departure time is 3:45pm, arriving at 5:55pm.");
+	}
+	else if (msmidnight < 1042) {
+		printf("closest departure time is 3:45pm, arriving at 5:55pm.");
+	}
+	else if (msmidnight < 1140) {
+		printf("closest departure time is 7:00pm, arriving at 9:20pm.");
+	}
+	else if (msmidnight < 1222) {
+		printf("closest departure time is 7:00pm, arriving at 9:20pm.");
+	}
+	else if (msmidnight < 1440) {
+		printf("closest departure time is 9:45pm, arriving at 11:58pm.");
+	}
+	else if (msmidnight > 1440) {
+		printf("incorrect time "); 
+	}
+
+}
+
+/*8 hours = 480 minutes, 9 hours 43 minutes = 583 minutes
+11:19 = 679 minutes, 12:47 = 767 minutes, 2:00pm = 840 minutes
+3:45pm = 945 minutes, 7:00pm = 1140 minutes, 9:45 = 1305 minutes */
